@@ -1,0 +1,129 @@
+/* =========================================================
+   BOOKHAVEN DESIGN TOKENS  (structure follows Kadai design system v1.0)
+   Every colour, size and font in the website comes from these variables.
+
+   COLOUR ROLES
+   1. PRIORITY   (primary)   Peacock teal   -> buttons, links, selected state, brand
+   2. SECONDARY  (secondary) Marigold       -> highlights, header cart badge, hero accent, active filters
+   3. TERTIARY   (tertiary)  Plum           -> sale / discount badges and savings
+   + STATUS (success, warning, danger) and NEUTRAL (gray) colours
+   ========================================================= */
+
+:root {
+    /* ---------- 1. PRIORITY colour : peacock teal ---------- */
+    --color-primary-700: #0a4a58;   /* hover, pressed */
+    --color-primary-600: #0e5f70;   /* buttons, links */
+    --color-primary-100: #d3ebf0;   /* selected background */
+    --color-primary-50: #ebf6f8;    /* tint background */
+
+    /* ---------- 2. SECONDARY colour : marigold ---------- */
+    --color-secondary-700: #8a5200; /* text on marigold tint */
+    --color-secondary-500: #f2a900; /* highlight fill, badges */
+    --color-secondary-100: #fde7ad; /* soft highlight */
+    --color-secondary-50: #fff7e0;  /* tint background */
+
+    /* ---------- 3. TERTIARY colour : plum ---------- */
+    --color-tertiary-600: #9d2b6b;  /* sale, discount */
+    --color-tertiary-50: #fbeaf3;   /* sale background */
+
+    /* ---------- STATUS ---------- */
+    --color-success-700: #15803d;   /* in stock, free */
+    --color-success-50: #ecfdf3;    /* success background */
+    --color-warning-700: #b45309;   /* stars, low stock */
+    --color-warning-50: #fff7e6;    /* warning background */
+    --color-danger-700: #b91c1c;    /* errors, remove */
+    --color-danger-50: #fef2f2;     /* error background */
+
+    /* ---------- NEUTRAL ---------- */
+    --color-gray-900: #0f1f24;      /* text, header */
+    --color-gray-700: #31434a;      /* body text */
+    --color-gray-600: #475a62;      /* secondary text */
+    --color-gray-500: #667880;      /* muted, labels */
+    --color-gray-300: #cbd6da;      /* input border */
+    --color-gray-200: #e1e8eb;      /* card border */
+    --color-gray-100: #eef2f4;      /* dividers */
+    --color-gray-50: #f6f8f9;       /* page background */
+    --color-white: #ffffff;         /* cards */
+
+    --color-focus-ring: #7cc4d1;    /* 3px focus ring */
+    --color-overlay: rgba(15, 31, 36, 0.55);
+    --shade-soft: rgba(15, 31, 36, 0.22);    /* book hinge shadow */
+    --shade-gloss: rgba(255, 255, 255, 0.16); /* book cover shine */
+
+    /* ---------- BOOK COVER THEMES (book.coverTheme 1 to 8) ---------- */
+    --cover-1-bg: #0e5f70; --cover-1-fg: #ffffff; --cover-1-accent: #f2a900;
+    --cover-2-bg: #7a1f52; --cover-2-fg: #ffffff; --cover-2-accent: #f7c8e0;
+    --cover-3-bg: #f2a900; --cover-3-fg: #2b1b00; --cover-3-accent: #0a4a58;
+    --cover-4-bg: #2d3a8c; --cover-4-fg: #ffffff; --cover-4-accent: #ffd66b;
+    --cover-5-bg: #166534; --cover-5-fg: #ffffff; --cover-5-accent: #fde68a;
+    --cover-6-bg: #b8451a; --cover-6-fg: #ffffff; --cover-6-accent: #ffe0b2;
+    --cover-7-bg: #1f2933; --cover-7-fg: #ffffff; --cover-7-accent: #7dd3e0;
+    --cover-8-bg: #e3edf0; --cover-8-fg: #0f1f24; --cover-8-accent: #9d2b6b;
+
+    /* ---------- TYPOGRAPHY ---------- */
+    --font-heading: "Poppins", "Inter", system-ui, sans-serif;  /* headings 600 / 700 */
+    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; /* body and UI 400-700 */
+
+    --fs-display: 2.5rem;    --lh-display: 3rem;      /* display 40/48 */
+    --fs-h1: 2rem;           --lh-h1: 2.5rem;         /* h1 32/40 */
+    --fs-h2: 1.5rem;         --lh-h2: 2rem;           /* h2 24/32 */
+    --fs-h3: 1.25rem;        --lh-h3: 1.75rem;        /* h3 20/28 */
+    --fs-price-lg: 1.75rem;  --lh-price-lg: 2.25rem;  /* price-lg 28/36 */
+    --fs-body-lg: 1.125rem;  --lh-body-lg: 1.75rem;   /* body-lg 18/28 */
+    --fs-body: 1rem;         --lh-body: 1.5rem;       /* body 16/24 */
+    --fs-body-sm: 0.875rem;  --lh-body-sm: 1.25rem;   /* body-sm 14/20 */
+    --fs-label: 0.875rem;    --lh-label: 1.25rem;     /* label 14/20 */
+    --fs-caption: 0.75rem;   --lh-caption: 1rem;      /* caption 12/16 */
+
+    /* ---------- SPACING (4px base) ---------- */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+
+    /* ---------- RADIUS ---------- */
+    --radius-sm: 6px;     /* badges, small inputs */
+    --radius-md: 10px;    /* buttons, inputs */
+    --radius-lg: 16px;    /* cards */
+    --radius-xl: 24px;    /* banners */
+    --radius-pill: 999px; /* chips, counters */
+
+    /* ---------- ELEVATION ---------- */
+    --shadow-sm: 0 1px 2px rgba(15, 31, 36, 0.06);     /* header, inputs */
+    --shadow-md: 0 6px 16px rgba(15, 31, 36, 0.08);    /* product card hover */
+    --shadow-lg: 0 16px 40px rgba(15, 31, 36, 0.12);   /* dropdowns, toasts */
+
+    /* ---------- LAYOUT ---------- */
+    --container-max: 1200px;
+    --page-padding: 24px;
+    --header-height: 72px;
+    --grid-gap: 24px;
+    --sidebar-width: 264px;
+
+    --control-sm: 36px;
+    --control-md: 44px;
+    --control-lg: 52px;
+
+    --icon-size: 20px;
+    --icon-stroke: 2;
+    --transition: 150ms ease-out;
+}
+
+/* Mobile values from the design system (up to 639px) */
+@media (max-width: 639px) {
+    :root {
+        --page-padding: 16px;
+        --header-height: 64px;
+        --grid-gap: 12px;
+        --fs-display: 1.75rem;
+        --lh-display: 2.25rem;
+        --fs-h1: 1.5rem;
+        --lh-h1: 2rem;
+    }
+}
